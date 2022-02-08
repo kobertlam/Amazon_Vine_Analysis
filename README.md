@@ -6,7 +6,7 @@ Enter the world of big data as you perform ETL on a dataset from Amazon, and ana
 The purpose of this analysis is well defined
 
 ## Data Source:
-This analysis use the [Pet Products Reviews](https://s3.amazonaws.com/amazon-reviews-pds/tsv/amazon_reviews_us_Pet_Products_v1_00.tsv.gz) from the [Amazon Review datasets] (https://s3.amazonaws.com/amazon-reviews-pds/tsv/index.txt) as the data source.
+This analysis use the [Pet Products Reviews](https://s3.amazonaws.com/amazon-reviews-pds/tsv/amazon_reviews_us_Pet_Products_v1_00.tsv.gz) from the [Amazon Review datasets](https://s3.amazonaws.com/amazon-reviews-pds/tsv/index.txt) as the data source.
 
 ## Results:
 1. How many Vine reviews and non-Vine reviews were there?
