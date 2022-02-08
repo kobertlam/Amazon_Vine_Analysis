@@ -1,9 +1,10 @@
 # Amazon_Vine_Analysis
-Enter the world of big data as you perform ETL on a dataset from Amazon, and analyze product reviews for a marketing company.
 
 ## Overview of the analysis:
 
-The purpose of this analysis is well defined
+This project analyze Amazon reviews written by members of the paid Amazon Vine program. The Amazon Vine program is a service that allows manufacturers and publishers to receive reviews for their products. Companies like SellBy pay a small fee to Amazon and provide products to Amazon Vine members, who are then required to publish a review.
+
+The Amazon Vine program has about 50 datasets. Each one contains reviews of a specific product, from clothing apparel to wireless products. In this project, we pick one of these datasets and use **PySpark** to perform the ETL process to extract the dataset, transform the data, connect to an **AWS RDS (PostgreSQL)** instance, and load the transformed data into pgAdmin. Next, we use PySpark to determine if there is any bias toward favorable reviews from Vine members in the dataset. Then, we write a summary of the analysis.
 
 ## Data Source:
 This analysis use the [Pet Products Reviews](https://s3.amazonaws.com/amazon-reviews-pds/tsv/amazon_reviews_us_Pet_Products_v1_00.tsv.gz) from the [Amazon Review datasets](https://s3.amazonaws.com/amazon-reviews-pds/tsv/index.txt) as the data source.
@@ -20,5 +21,6 @@ This analysis use the [Pet Products Reviews](https://s3.amazonaws.com/amazon-rev
     * **54.47%** of non-Vine reviews were 5-stars
 
 ## Summary:
-* The summary states whether or not there is bias, and the results support this statement (2 pt)
-* An additional analysis is recommended to support the statement (2 pt)
+* Since the percentage of 5-stars reviews of the Vine program 
+(**38.24%**) is much lower than the non-Vine reviews (**54.47%**), this indicates that having a paid Vine review may have bias on the review. However, we cannot conclude the reasons of causing the difference.
+* We may run the same analysis on other [Amazon Review datasets](https://s3.amazonaws.com/amazon-reviews-pds/tsv/index.txt), and compare the percentage of Vine & non-Vine 5-stars reviews, and see if there are similar results or not.
